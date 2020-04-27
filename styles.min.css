@@ -1,14 +1,40 @@
-/* normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+
+/* Document
+   ========================================================================== */
+
 html {
     font-family: sans-serif;
+    /* 1 */
     line-height: 1.15;
+    /* 2 */
     -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%
+    /* 3 */
+    -webkit-text-size-adjust: 100%;
+    /* 3 */
 }
 
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+
 body {
-    margin: 0
+    margin: 0;
 }
+
+/**
+ * Add the correct display in IE 9-.
+ */
 
 article,
 aside,
@@ -16,114 +42,229 @@ footer,
 header,
 nav,
 section {
-    display: block
+    display: block;
 }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
 
 h1 {
     font-size: 2em;
-    margin: .67em 0
+    margin: 0.67em 0;
 }
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
 
 figcaption,
 figure,
 main {
-    display: block
+    /* 1 */
+    display: block;
 }
 
+/**
+ * Add the correct margin in IE 8.
+ */
+
 figure {
-    margin: 1em 40px
+    margin: 1em 40px;
 }
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
 
 hr {
     box-sizing: content-box;
+    /* 1 */
     height: 0;
-    overflow: visible
+    /* 1 */
+    overflow: visible;
+    /* 2 */
 }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
 
 pre {
     font-family: monospace, monospace;
-    font-size: 1em
+    /* 1 */
+    font-size: 1em;
+    /* 2 */
 }
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
 
 a {
     background-color: transparent;
-    -webkit-text-decoration-skip: objects
+    /* 1 */
+    -webkit-text-decoration-skip: objects;
+    /* 2 */
 }
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
 
 a:active,
 a:hover {
-    outline-width: 0
+    outline-width: 0;
 }
+
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
 
 abbr[title] {
-    border-bottom: 0;
+    border-bottom: none;
+    /* 1 */
     text-decoration: underline;
-    text-decoration: underline dotted
+    /* 2 */
+    text-decoration: underline dotted;
+    /* 2 */
 }
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
 
 b,
 strong {
-    font-weight: inherit
+    font-weight: inherit;
 }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
 
 b,
 strong {
-    font-weight: bolder
+    font-weight: bolder;
 }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
 
 code,
 kbd,
 samp {
     font-family: monospace, monospace;
-    font-size: 1em
+    /* 1 */
+    font-size: 1em;
+    /* 2 */
 }
 
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+
 dfn {
-    font-style: italic
+    font-style: italic;
 }
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
 
 mark {
     background-color: #ff0;
-    color: #000
+    color: #000;
 }
 
+/**
+ * Add the correct font size in all browsers.
+ */
+
 small {
-    font-size: 80%
+    font-size: 80%;
 }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
 
 sub,
 sup {
     font-size: 75%;
     line-height: 0;
     position: relative;
-    vertical-align: baseline
+    vertical-align: baseline;
 }
 
 sub {
-    bottom: -0.25em
+    bottom: -0.25em;
 }
 
 sup {
-    top: -0.5em
+    top: -0.5em;
 }
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ */
 
 audio,
 video {
-    display: inline-block
+    display: inline-block;
 }
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
 
 audio:not([controls]) {
     display: none;
-    height: 0
+    height: 0;
 }
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
 
 img {
-    border-style: none
+    border-style: none;
 }
 
+/**
+ * Hide the overflow in IE.
+ */
+
 svg:not(:root) {
-    overflow: hidden
+    overflow: hidden;
 }
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
 
 button,
 input,
@@ -131,160 +272,278 @@ optgroup,
 select,
 textarea {
     font-family: sans-serif;
+    /* 1 */
     font-size: 100%;
+    /* 1 */
     line-height: 1.15;
-    margin: 0
+    /* 1 */
+    margin: 0;
+    /* 2 */
 }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
 
 button,
 input {
-    overflow: visible
+    /* 1 */
+    overflow: visible;
 }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
 
 button,
 select {
-    text-transform: none
+    /* 1 */
+    text-transform: none;
 }
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
 
 button,
 html [type="button"],
 [type="reset"],
 [type="submit"] {
-    -webkit-appearance: button
+    -webkit-appearance: button;
+    /* 2 */
 }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
 
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
 [type="submit"]::-moz-focus-inner {
     border-style: none;
-    padding: 0
+    padding: 0;
 }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
 
 button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
 [type="submit"]:-moz-focusring {
-    outline: 1px dotted ButtonText
+    outline: 1px dotted ButtonText;
 }
 
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+
 fieldset {
-    border: 1px solid silver;
+    border: 1px solid #c0c0c0;
     margin: 0 2px;
-    padding: .35em .625em .75em
+    padding: 0.35em 0.625em 0.75em;
 }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
 
 legend {
     box-sizing: border-box;
+    /* 1 */
     color: inherit;
+    /* 2 */
     display: table;
+    /* 1 */
     max-width: 100%;
+    /* 1 */
     padding: 0;
-    white-space: normal
+    /* 3 */
+    white-space: normal;
+    /* 1 */
 }
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
 
 progress {
     display: inline-block;
-    vertical-align: baseline
+    /* 1 */
+    vertical-align: baseline;
+    /* 2 */
 }
 
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+
 textarea {
-    overflow: auto
+    overflow: auto;
 }
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
 
 [type="checkbox"],
 [type="radio"] {
     box-sizing: border-box;
-    padding: 0
+    /* 1 */
+    padding: 0;
+    /* 2 */
 }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
 
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
-    height: auto
+    height: auto;
 }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
 
 [type="search"] {
     -webkit-appearance: textfield;
-    outline-offset: -2px
+    /* 1 */
+    outline-offset: -2px;
+    /* 2 */
 }
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
 
 [type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
-    -webkit-appearance: none
+    -webkit-appearance: none;
 }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
 
 ::-webkit-file-upload-button {
     -webkit-appearance: button;
-    font: inherit
+    /* 1 */
+    font: inherit;
+    /* 2 */
 }
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
 
 details,
 menu {
-    display: block
+    display: block;
 }
+
+/*
+ * Add the correct display in all browsers.
+ */
 
 summary {
-    display: list-item
+    display: list-item;
 }
+
+/* Scripting
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ */
 
 canvas {
-    display: inline-block
+    display: inline-block;
 }
+
+/**
+ * Add the correct display in IE.
+ */
 
 template {
-    display: none
+    display: none;
 }
 
+/* Hidden
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10-.
+ */
+
 [hidden] {
-    display: none
+    display: none;
 }
 
 ::-moz-selection {
-    opacit: .5;
-    background-color: rgba(29, 29, 27, 0.49)
+    opacit: 0.5;
+    background-color: rgba(29, 29, 27, 0.49);
 }
 
 ::selection {
-    opacit: .5;
-    background-color: rgba(29, 29, 27, 0.49)
+    opacit: 0.5;
+    background-color: rgba(29, 29, 27, 0.49);
 }
 
 body {
-    background-color: #fafafa
+    background-color: #fff;
 }
 
 body .required:after {
-    content: '*';
+    content: "*";
     display: inline-block;
     position: relative;
     margin-left: 4px;
-    color: red
+    color: red;
 }
 
 body .clear-both {
-    clear: both
+    clear: both;
 }
 
 body * {
-    font-family: 'DM Sans', sans-serif;
+    font-family: "DM Sans", sans-serif;
     color: rgba(29, 29, 27, 0.71);
-    font-size: 18px
+    font-size: 18px;
 }
 
-@media(max-width:576px) {
+@media (max-width: 576px) {
     body * {
-        font-size: 15px
+        font-size: 15px;
     }
 }
 
 body .dist:before {
-    content: '';
+    content: "";
     background-image: url("../../../campery/assets/images/png/distance.png");
     width: 30px;
     height: 30px;
     background-repeat: no-repeat;
     background-size: cover;
-    display: inline-block
+    display: inline-block;
 }
 
 body .plus-minus-toggle {
@@ -294,13 +553,13 @@ body .plus-minus-toggle {
     right: 0;
     width: 21px;
     display: inline-block;
-    top: .6em
+    top: 0.6em;
 }
 
 body .plus-minus-toggle:before,
 body .plus-minus-toggle:after {
     background: #f9b233;
-    content: '';
+    content: "";
     height: 3px;
     left: 0;
     position: absolute;
@@ -309,72 +568,73 @@ body .plus-minus-toggle:after {
     -o-transition: -o-transform 500ms ease;
     -moz-transition: transform 500ms ease, -moz-transform 500ms ease;
     transition: transform 500ms ease;
-    transition: transform 500ms ease, -moz-transform 500ms ease, -o-transform 500ms ease
+    transition: transform 500ms ease, -moz-transform 500ms ease,
+        -o-transform 500ms ease;
 }
 
 body .plus-minus-toggle:after {
     -moz-transform-origin: center;
     -ms-transform-origin: center;
     -o-transform-origin: center;
-    transform-origin: center
+    transform-origin: center;
 }
 
 body .plus-minus-toggle.collapsed:after {
     -moz-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     -o-transform: rotate(90deg);
-    transform: rotate(90deg)
+    transform: rotate(90deg);
 }
 
 body .plus-minus-toggle.collapsed:before {
     -moz-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     -o-transform: rotate(180deg);
-    transform: rotate(180deg)
+    transform: rotate(180deg);
 }
 
 body .yellow {
-    color: #f9b233 !important
+    color: #f9b233 !important;
 }
 
 body .yellow * {
-    color: #f9b233 !important
+    color: #f9b233 !important;
 }
 
 body strong {
     font-weight: 700;
-    color: #1d1d1b
+    color: #1d1d1b;
 }
 
 body .text-mid p {
-    margin-bottom: 0;
-    font-size: 36px
+    margin-bottom: 0em;
+    font-size: 36px;
 }
 
-@media(max-width:576px) {
+@media (max-width: 576px) {
     body .text-mid p {
-        font-size: 20px
+        font-size: 20px;
     }
 }
 
 body .text-mid p * {
-    font-size: 36px
+    font-size: 36px;
 }
 
-@media(max-width:576px) {
+@media (max-width: 576px) {
     body .text-mid p * {
-        font-size: 20px
+        font-size: 20px;
     }
 }
 
 body .text-tip {
     margin-bottom: 2.2em;
     padding-left: 3em;
-    position: relative
+    position: relative;
 }
 
 body .text-tip:before {
-    content: '';
+    content: "";
     background-image: url("../../../campery/assets/images/png/tip.png");
     background-size: contain;
     background-color: #f9b233;
@@ -392,83 +652,83 @@ body .text-tip:before {
     -ms-transform: translate(0, -50%);
     -o-transform: translate(0, -50%);
     transform: translate(0, -50%);
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
 }
 
-@media(max-width:576px) {
+@media (max-width: 576px) {
     body .text-tip:before {
-        background-size: 14px
+        background-size: 14px;
     }
 }
 
 body p {
     font-size: 18px;
     margin-bottom: 2.2em;
-    line-height: 1.6em
+    line-height: 1.6em;
 }
 
-@media(max-width:576px) {
+@media (max-width: 576px) {
     body p {
-        font-size: 15px
+        font-size: 15px;
     }
 }
 
 body h1,
 body h2,
 body h3 {
-    color: #1d1d1b
+    color: #1d1d1b;
 }
 
 body h1 {
     font-size: 64px;
-    margin-bottom: .5em;
-    margin-top: 0
+    margin-bottom: 0.5em;
+    margin-top: 0;
 }
 
-@media(max-width:576px) {
+@media (max-width: 576px) {
     body h1 {
-        font-size: 25px
+        font-size: 25px;
     }
 }
 
 body h2 {
     font-size: 36px;
-    margin-bottom: 1.3em
+    margin-bottom: 1.3em;
 }
 
-@media(max-width:576px) {
+@media (max-width: 576px) {
     body h2 {
-        font-size: 20px
+        font-size: 20px;
     }
 }
 
 body h3 {
     font-size: 21px;
-    margin-bottom: 3em
+    margin-bottom: 3em;
 }
 
-@media(max-width:576px) {
+@media (max-width: 576px) {
     body h3 {
         font-size: 17px;
-        margin-bottom: 2em
+        margin-bottom: 2em;
     }
 }
 
 body a:hover {
-    text-decoration: none
+    text-decoration: none;
 }
 
 .wpcf7 span.registration,
 .mc4wp-form span.registration {
-    width: 40% !important
+    width: 40% !important;
 }
 
-@media(max-width:1330px) {
+@media (max-width: 1330px) {
 
     .wpcf7 span.registration,
     .mc4wp-form span.registration {
         width: 100% !important;
-        display: block
+        display: block;
     }
 }
 
@@ -476,34 +736,34 @@ body a:hover {
 .wpcf7 .seats,
 .mc4wp-form .places,
 .mc4wp-form .seats {
-    width: 38%
+    width: 38%;
 }
 
 .wpcf7 .doubled,
 .mc4wp-form .doubled {
     width: 47%;
-    float: right
+    float: right;
 }
 
-@media(max-width:1500px) {
+@media (max-width: 1500px) {
 
     .wpcf7 .doubled .places,
     .mc4wp-form .doubled .places {
-        width: 35%
+        width: 35%;
     }
 
     .wpcf7 .doubled .seats,
     .mc4wp-form .doubled .seats {
-        width: 35%
+        width: 35%;
     }
 }
 
-@media(max-width:1330px) {
+@media (max-width: 1330px) {
 
     .wpcf7 .doubled,
     .mc4wp-form .doubled {
         width: 100%;
-        float: none
+        float: none;
     }
 }
 
@@ -511,51 +771,51 @@ body a:hover {
 .mc4wp-form .desc {
     width: 100%;
     float: none;
-    clear: both
+    clear: both;
 }
 
 .wpcf7 .desc textarea,
 .mc4wp-form .desc textarea {
     height: 300px;
     width: 100%;
-    border: 0;
+    border: none;
     border-bottom: solid 1px #5f5f5e;
-    resize: none
+    resize: none;
 }
 
 .wpcf7 .desc textarea:focus,
 .mc4wp-form .desc textarea:focus {
     border-bottom: solid 1px #1d1d1b;
-    outline: 0;
+    outline: none;
     box-shadow: none;
-    background-color: #fafafa
+    background-color: #fafafa;
 }
 
 .wpcf7 .desc textarea:focus input,
 .mc4wp-form .desc textarea:focus input {
-    display: none
+    display: none;
 }
 
 .wpcf7 .upload,
 .mc4wp-form .upload {
     height: 100%;
-    width: 100%
+    width: 100%;
 }
 
 .wpcf7 .upload span,
 .mc4wp-form .upload span {
     height: 100%;
-    width: 100%
+    width: 100%;
 }
 
 .wpcf7 .codedropz-upload-handler,
 .mc4wp-form .codedropz-upload-handler {
-    border: 0;
+    border: none;
     width: 100%;
     height: 300px;
     position: relative;
     border: dashed 7px rgba(95, 95, 94, 0.08);
-    border-radius: 0
+    border-radius: 0;
 }
 
 .wpcf7 .codedropz-upload-handler .codedropz-upload-inner,
@@ -567,17 +827,17 @@ body a:hover {
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
 }
 
 .wpcf7 .codedropz-upload-handler .codedropz-upload-inner span,
 .mc4wp-form .codedropz-upload-handler .codedropz-upload-inner span {
-    float: none !important
+    float: none !important;
 }
 
 .wpcf7 .codedropz-upload-handler .codedropz-upload-inner:before,
 .mc4wp-form .codedropz-upload-handler .codedropz-upload-inner:before {
-    content: '';
+    content: "";
     background-image: url("../../../campery/assets/images/png/upload.png");
     background-size: contain;
     background-position: center;
@@ -587,12 +847,12 @@ body a:hover {
     width: 100%;
     height: 70px;
     width: 70px;
-    margin: auto
+    margin: auto;
 }
 
 .wpcf7 .codedropz-upload-handler h3,
 .mc4wp-form .codedropz-upload-handler h3 {
-    font-size: 18px
+    font-size: 18px;
 }
 
 .wpcf7 .form-group,
@@ -600,40 +860,42 @@ body a:hover {
     position: relative;
     width: 47%;
     display: inline-block;
-    margin-bottom: 2.5em
+    margin-bottom: 2.5em;
 }
 
-@media(max-width:1330px) {
+@media (max-width: 1330px) {
 
     .wpcf7 .form-group,
     .mc4wp-form .form-group {
         width: 100%;
         display: block;
-        clear: both
+        clear: both;
     }
 }
 
 .wpcf7 .form-group:nth-of-type(2n),
 .mc4wp-form .form-group:nth-of-type(2n) {
     float: right;
-    padding-right: 0
+    padding-right: 0;
 }
 
 .wpcf7 .form-group label,
 .mc4wp-form .form-group label {
     position: absolute;
-    left: .75em;
-    top: .75em;
+    left: 0.75em;
+    top: 0.75em;
     color: rgba(29, 29, 27, 0.49);
-    -moz-transition-duration: .4s;
-    -o-transition-duration: .4s;
-    transition-duration: .4s;
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
     background-color: transparent;
     z-index: -1;
     -o-transition: font-size 150ms ease-out, -o-transform 150ms ease-out;
-    -moz-transition: transform 150ms ease-out, font-size 150ms ease-out, -moz-transform 150ms ease-out;
+    -moz-transition: transform 150ms ease-out, font-size 150ms ease-out,
+        -moz-transform 150ms ease-out;
     transition: transform 150ms ease-out, font-size 150ms ease-out;
-    transition: transform 150ms ease-out, font-size 150ms ease-out, -moz-transform 150ms ease-out, -o-transform 150ms ease-out
+    transition: transform 150ms ease-out, font-size 150ms ease-out,
+        -moz-transform 150ms ease-out, -o-transform 150ms ease-out;
 }
 
 .wpcf7 input:not(.wpcf7-submit),
@@ -642,11 +904,11 @@ body a:hover {
 .mc4wp-form input:not(.wpcf7-submit),
 .mc4wp-form textarea,
 .mc4wp-form select {
-    padding: .75em;
+    padding: 0.75em;
     background-color: transparent;
     width: 100%;
-    border: 0;
-    border-bottom: solid 1px #5f5f5e
+    border: none;
+    border-bottom: solid 1px #5f5f5e;
 }
 
 .wpcf7 input:not(.wpcf7-submit):focus,
@@ -656,55 +918,55 @@ body a:hover {
 .mc4wp-form textarea:focus,
 .mc4wp-form select:focus {
     border-bottom: solid 1px #1d1d1b;
-    outline: 0;
+    outline: none;
     box-shadow: none;
-    background-color: #fafafa
+    background-color: #fafafa;
 }
 
 .wpcf7 .textarea,
 .mc4wp-form .textarea {
     width: 100% !important;
-    display: block
+    display: block;
 }
 
 .wpcf7 span.registration,
 .mc4wp-form span.registration {
-    width: 50% !important
+    width: 50% !important;
 }
 
-@media(max-width:1330px) {
+@media (max-width: 1330px) {
 
     .wpcf7 span.registration,
     .mc4wp-form span.registration {
-        width: 100% !important
+        width: 100% !important;
     }
 }
 
 .wpcf7 .mileage:after,
 .mc4wp-form .mileage:after {
-    content: 'km';
+    content: "km";
     position: absolute;
     right: 2em;
-    top: .5em;
+    top: 0.5em;
     display: inline-block;
-    color: #1d1d1b
+    color: #1d1d1b;
 }
 
 .wpcf7 .pricesss:after,
 .mc4wp-form .pricesss:after {
-    content: 'EUR';
+    content: "EUR";
     position: absolute;
     right: 2em;
-    top: .5em;
+    top: 0.5em;
     display: inline-block;
-    color: #1d1d1b
+    color: #1d1d1b;
 }
 
 .wpcf7 input[type="email"],
 .wpcf7 textarea,
 .mc4wp-form input[type="email"],
 .mc4wp-form textarea {
-    background-color: transparent
+    background-color: transparent;
 }
 
 .wpcf7 textarea,
@@ -712,7 +974,7 @@ body a:hover {
     border-bottom: solid 1px #5f5f5e;
     height: 300px;
     resize: none;
-    background-color: transparent
+    background-color: transparent;
 }
 
 .wpcf7 .focused label,
@@ -721,15 +983,15 @@ body a:hover {
     -ms-transform: translateY(-150%);
     -o-transform: translateY(-150%);
     transform: translateY(-150%);
-    font-size: .75em;
+    font-size: 0.75em;
     left: 0;
-    color: #1d1d1b
+    color: #1d1d1b;
 }
 
 .wpcf7 .textarea,
 .mc4wp-form .textarea {
     width: 100%;
-    clear: both
+    clear: both;
 }
 
 .wpcf7 .inline-group,
@@ -737,10 +999,10 @@ body a:hover {
     width: 47%;
     float: right;
     display: inline-block;
-    margin-bottom: 50px
+    margin-bottom: 50px;
 }
 
-@media(max-width:1330px) {
+@media (max-width: 1330px) {
 
     .wpcf7 .inline-group,
     .mc4wp-form .inline-group {
@@ -748,7 +1010,7 @@ body a:hover {
         display: block;
         clear: both;
         overflow: auto;
-        float: none !important
+        float: none !important;
     }
 }
 
@@ -756,27 +1018,27 @@ body a:hover {
 .mc4wp-form .inline-group:nth-of-type(2n) {
     float: left;
     padding-left: 0;
-    padding-right: 0
+    padding-right: 0;
 }
 
 .wpcf7 .inline-group:nth-of-type(1),
 .mc4wp-form .inline-group:nth-of-type(1) {
-    float: right
+    float: right;
 }
 
 .wpcf7 .inline-group span,
 .mc4wp-form .inline-group span {
     display: inline-block;
     width: 65%;
-    float: right
+    float: right;
 }
 
-@media(max-width:1330px) {
+@media (max-width: 1330px) {
 
     .wpcf7 .inline-group span,
     .mc4wp-form .inline-group span {
         width: 100% !important;
-        display: block
+        display: block;
     }
 }
 
@@ -784,47 +1046,47 @@ body a:hover {
 .mc4wp-form .inline-group p {
     display: inline-block;
     margin-right: 50px;
-    width: 100px
+    width: 100px;
 }
 
-@media(max-width:1330px) {
+@media (max-width: 1330px) {
 
     .wpcf7 .inline-group p,
     .mc4wp-form .inline-group p {
         width: 100%;
         display: block;
-        margin-bottom: 0
+        margin-bottom: 0;
     }
 }
 
 .newsletter .mc4wp-form-fields .form-group {
-    overflow: inherit
+    overflow: inherit;
 }
 
-@media(max-width:1200px) {
+@media (max-width: 1200px) {
     .newsletter .mc4wp-form-fields .form-group {
         width: 75% !important;
-        margin: auto
+        margin: auto;
     }
 }
 
 .newsletter .mc4wp-form-fields .button-1 {
-    background-color: #f9b233
+    background-color: #f9b233;
 }
 
 .newsletter .wpcf7-submit {
     border-bottom: none !important;
-    max-width: 150px
+    max-width: 150px;
 }
 
 .newsletter .wpcf7-submit:focus {
     background-color: black;
-    border-bottom: 0;
-    color: white
+    border-bottom: none;
+    color: white;
 }
 
 #wider {
-    width: auto
+    width: auto;
 }
 
 .page-template-contact .wpcf7-submit {
@@ -833,37 +1095,37 @@ body a:hover {
     max-width: 200px;
     display: block;
     background-color: #f9b233;
-    border: 0;
-    font-weight: 700
+    border: none;
+    font-weight: 700;
 }
 
 .page-template-contact .wpcf7-submit:focus {
-    border-bottom: 0;
+    border-bottom: none;
     background-color: black;
-    color: white
+    color: white;
 }
 
 .page-template-contact .road-assistance {
-    background-color: rgba(216, 216, 216, 0.13)
+    background-color: rgba(216, 216, 216, 0.13);
 }
 
-@media(max-width:767px) {
+@media (max-width: 767px) {
     .page-template-contact .bckg {
-        background-image: none !important
+        background-image: none !important;
     }
 }
 
-@media(min-width:767px) {
+@media (min-width: 767px) {
     .page-template-contact .bckg {
         background-repeat: no-repeat;
         background-size: 30%;
-        background-position: right bottom
+        background-position: right bottom;
     }
 }
 
-@media(min-width:992px) {
+@media (min-width: 992px) {
     .page-template-contact .bckg {
-        background-image: none !important
+        background-image: none !important;
     }
 }
 
@@ -878,10 +1140,10 @@ body a:hover {
     -ms-flex-align: center;
     align-items: center;
     margin-right: 1.5em;
-    position: relative
+    position: relative;
 }
 
-@media(max-width:992px) {
+@media (max-width: 992px) {
 
     .tel-contact,
     .mail-contact {
@@ -890,63 +1152,63 @@ body a:hover {
         text-align: left;
         padding-left: 3.5em;
         top: 1em;
-        line-height: 45px
+        line-height: 45px;
     }
 }
 
 .tel-contact:before,
 .mail-contact:before {
-    content: '';
+    content: "";
     height: 40px;
     width: 40px;
     background-color: #f9b233;
     border-radius: 50%;
     display: inline-block;
-    margin-right: .5em
+    margin-right: 0.5em;
 }
 
-@media(max-width:992px) {
+@media (max-width: 992px) {
 
     .tel-contact:before,
     .mail-contact:before {
         position: absolute;
-        left: 0
+        left: 0;
     }
 }
 
 .tel-contact:after,
 .mail-contact:after {
-    content: '';
+    content: "";
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
     left: 10px;
     width: 20px;
-    height: 20px
+    height: 20px;
 }
 
-@media(max-width:992px) {
+@media (max-width: 992px) {
 
     .tel-contact:after,
     .mail-contact:after {
-        top: 10px
+        top: 10px;
     }
 }
 
 .tel-contact:after {
-    background-image: url("../../../campery/assets/images/svg/phone.svg")
+    background-image: url("../../../campery/assets/images/svg/phone.svg");
 }
 
 .mail-contact:after {
-    background-image: url("../../../campery/assets/images/svg/mail.svg")
+    background-image: url("../../../campery/assets/images/svg/mail.svg");
 }
 
 .hero-class {
     height: 50vh;
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
 }
 
 .hero-class .centered-absolute {
@@ -955,7 +1217,7 @@ body a:hover {
     -moz-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
     -o-transform: translate(0, -50%);
-    transform: translate(0, -50%)
+    transform: translate(0, -50%);
 }
 
 .hero-class .centered-absolute-max {
@@ -966,35 +1228,35 @@ body a:hover {
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
 }
 
 .hero-class h1 {
-    font-weight: 700
+    font-weight: 700;
 }
 
-@media(min-width:992px) {
+@media (min-width: 992px) {
 
     .hero-class .centered-absolute,
     .hero-class .centered-absolute-max {
-        top: 60%
+        top: 60%;
     }
 }
 
 .hero-class * {
-    color: white
+    color: white;
 }
 
 .hero-class .button-1,
 .hero-class .button {
-    color: black
+    color: black;
 }
 
 ol {
     list-style: none;
     counter-reset: custom-counter;
     padding: 0;
-    margin-top: 3em
+    margin-top: 3em;
 }
 
 ol li {
@@ -1003,7 +1265,7 @@ ol li {
     position: relative;
     font-weight: 700;
     margin-bottom: 2em;
-    color: #1d1d1b
+    color: #1d1d1b;
 }
 
 ol li:before {
@@ -1011,7 +1273,7 @@ ol li:before {
     color: #f9b233;
     font-weight: bold;
     left: 0;
-    position: absolute
+    position: absolute;
 }
 
 .add-info {
@@ -1021,22 +1283,22 @@ ol li:before {
     opacity: 0;
     top: 4em;
     right: -4em;
-    padding: .5em 1em;
+    padding: 0.5em 1em;
     font-size: 9px;
     position: absolute;
-    white-space: nowrap
+    white-space: nowrap;
 }
 
-@media(max-width:576px) {
+@media (max-width: 576px) {
     .add-info {
         top: 4em;
         right: 6em;
-        left: inherit
+        left: inherit;
     }
 }
 
 .add-info:before {
-    content: '';
+    content: "";
     width: 0;
     position: absolute;
     top: -8px;
@@ -1044,15 +1306,15 @@ ol li:before {
     left: 41%;
     border-style: solid;
     border-width: 0 10px 10px 10px;
-    border-color: transparent transparent #1d1d1b transparent
+    border-color: transparent transparent #1d1d1b transparent;
 }
 
 .add-info .yellow {
-    margin-left: 2px
+    margin-left: 2px;
 }
 
 .page-template-campervans .add-info {
-    left: 63%
+    left: 63%;
 }
 
 .container,
@@ -1132,7 +1394,7 @@ ol li:before {
     padding-left: 0;
     margin-left: 0;
     padding-right: 0;
-    margin-right: 0
+    margin-right: 0;
 }
 
 .centered {
@@ -1141,17 +1403,17 @@ ol li:before {
     display: flex;
     -moz-box-align: center;
     -ms-flex-align: center;
-    align-items: center
+    align-items: center;
 }
 
-@media(min-width:992px) {
+@media (min-width: 992px) {
     .centered-absolute {
         position: absolute;
         top: 50%;
         -moz-transform: translate(0, -50%);
         -ms-transform: translate(0, -50%);
         -o-transform: translate(0, -50%);
-        transform: translate(0, -50%)
+        transform: translate(0, -50%);
     }
 }
 
@@ -1163,7 +1425,7 @@ ol li:before {
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
 }
 
 .button,
@@ -1178,16 +1440,16 @@ ol li:before {
     display: block;
     position: relative;
     font-size: 17px;
-    z-index: 999
+    z-index: 999;
 }
 
-@media(max-width:576px) {
+@media (max-width: 576px) {
 
     .button,
     .button-1,
     .wpcf7-submit {
         padding: 1em;
-        font-size: 15px
+        font-size: 15px;
     }
 }
 
@@ -1196,13 +1458,13 @@ ol li:before {
 .wpcf7-submit:hover {
     text-decoration: none;
     color: white !important;
-    cursor: pointer
+    cursor: pointer;
 }
 
 .button:after,
 .button-1:after,
 .wpcf7-submit:after {
-    content: '';
+    content: "";
     width: 0;
     position: absolute;
     top: 0;
@@ -1211,123 +1473,140 @@ ol li:before {
     bottom: 0;
     display: block;
     background-color: black;
-    -moz-transition-duration: .4s;
-    -o-transition-duration: .4s;
-    transition-duration: .4s;
-    z-index: -1
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    z-index: -1;
 }
 
 .button:hover:after,
 .button-1:hover:after,
 .wpcf7-submit:hover:after {
-    width: 100%
+    width: 100%;
 }
 
 .button-1 {
-    max-width: 250px
+    max-width: 250px;
 }
 
 .button.disabled,
 .button-1.disabled {
     background-color: white;
     color: rgba(29, 29, 27, 0.49) !important;
-    box-shadow: 0 0 17px -2px rgba(0, 0, 0, 0.1)
+    box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.1);
 }
 
 .button.disabled:hover,
 .button-1.disabled:hover {
     background-color: white !important;
     color: rgba(29, 29, 27, 0.49) !important;
-    cursor: not-allowed
+    cursor: not-allowed;
 }
 
 .button.disabled:hover:after,
 .button-1.disabled:hover:after {
-    display: none
+    display: none;
 }
 
 .wpcf7-submit {
     width: 150px;
-    border: 0;
-    margin: auto
+    border: none;
+    margin: auto;
 }
 
 .dark-bckg {
-    background-color: black
+    background-color: black;
 }
 
 footer#footer {
     background-color: black;
-    overflow: hidden
+    position: relative;
 }
 
 footer#footer .bckg-foot {
     padding-bottom: 3em;
     position: relative;
     padding-bottom: 4em;
-    padding-top: 12em
+    padding-top: 12em;
 }
 
-@media(max-width:992px) {
+@media (max-width: 992px) {
     footer#footer .bckg-foot {
-        padding-top: 8em
+        padding-top: 8em;
     }
 }
 
-@media(max-width:576px) {
+@media (max-width: 576px) {
     footer#footer .bckg-foot {
         padding-top: 5em;
-        padding-bottom: 1em
+        padding-bottom: 1em;
     }
 }
 
-footer#footer .bckg-foot:before {
-    content: '';
+footer#footer:before {
+    content: "";
     background-image: url("../../../campery/assets/images/png/mud-rotate.png");
-    background-size: cover;
-    background-position: center;
+    background-size: 100% auto;
+    background-position: center top;
     position: absolute;
     display: block;
     height: 40vh;
     background-repeat: no-repeat;
     width: 120%;
-    margin-top: -2%;
-    top: -2em;
-    margin-left: -10%;
-    -moz-transform: rotate(-2deg);
-    -ms-transform: rotate(-2deg);
-    -o-transform: rotate(-2deg);
-    transform: rotate(-2deg)
+    /**/
+    height: 100%;
+    width: 100%;
+    transform: rotate(0);
+    margin: 0 !important;
+    left: 0;
+    top: -2px;
+    z-index: 1;
 }
 
-@media(max-width:1330px) {
-    footer#footer .bckg-foot:before {
-        height: 26vh;
-        top: -2em
+footer#footer:after {
+    content: "";
+    background-color: white;
+    background-size: 100% auto;
+    background-position: center top;
+    position: absolute;
+    display: block;
+    background-repeat: no-repeat;
+    /**/
+    height: 20%;
+    width: 100%;
+    transform: rotate(0);
+    margin: 0 !important;
+    left: 0;
+    top: -2px;
+    z-index: 0;
+}
+
+@media (max-width: 1600px) {
+    footer#footer:after {
+        height: 15%;
     }
 }
 
-@media(max-width:992px) {
-    footer#footer .bckg-foot:before {
-        height: 25vh;
-        margin-top: 0;
-        width: 130%;
-        right: -2em
+@media (max-width: 980px) {
+    footer#footer:after {
+        height: 10%;
     }
 }
 
-@media(max-width:576px) {
-    footer#footer .bckg-foot:before {
-        height: 16vh;
-        margin-top: 0;
-        width: 130%;
-        right: -2em
+@media (max-width: 567px) {
+    footer#footer:after {
+        height: 5%;
     }
+}
+
+.bckg-foot {
+    z-index: 2;
+    position: relative;
 }
 
 footer#footer .bckg-foot .border-bot {
-    border-bottom: 3px solid #1d1d1b;
-    margin-top: 2em
+    border-bottom: 3px solid rgba(255, 255, 255, 0.3);
+    margin-top: 2em;
 }
 
 footer#footer ul#menu-footer {
@@ -1339,12 +1618,12 @@ footer#footer ul#menu-footer {
     -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 0;
-    margin: 0
+    margin: 0;
 }
 
-@media(max-width:576px) {
+@media (max-width: 576px) {
     footer#footer ul#menu-footer {
-        display: block
+        display: block;
     }
 }
 
@@ -1352,58 +1631,109 @@ footer#footer ul#menu-footer li {
     display: -moz-box;
     display: -ms-flexbox;
     display: flex;
-    list-style-type: none
+    list-style-type: none;
 }
 
-@media(max-width:576px) {
+@media (max-width: 576px) {
     footer#footer ul#menu-footer li {
         display: block;
-        margin-bottom: 1em
+        margin-bottom: 1em;
     }
 }
 
 footer#footer ul#menu-footer li a {
-    color: white
+    color: white;
 }
 
 footer#footer ul#menu-footer .up {
     background-color: #f9b233;
-    padding: .75em 1em
+    padding: 0.75em 1em;
 }
 
 footer#footer .bottom-info {
-    margin-top: 2em
+    margin-top: 2em;
 }
 
 footer#footer .bottom-info * {
-    color: #1d1d1b
+    color: rgba(255, 255, 255, 0.3);
 }
 
 footer#footer .bottom-info .social-wrapper span {
-    color: white
+    color: white;
 }
 
 footer#footer .bottom-info .social-wrapper i {
-    color: #f9b233
+    color: #f9b233;
 }
 
 .extras .short-desc {
-    font-size: 15px
+    font-size: 15px;
+}
+
+.extras .img-wrapper {
+    background-color: white;
+    border-radius: 100%;
+    box-shadow: 0 7px 30px 3px rgba(0, 0, 0, 0.05);
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+.extras .col-6:nth-child(1) .img-wrapper::after {
+    content: "2";
+    position: absolute;
+    top: -0.25rem;
+    right: -0.25rem;
+    font-size: 14px;
+    height: 24px;
+    width: 24px;
+    line-height: 24px;
+    background-color: #f9b233;
+    border-radius: 100%;
+    color: white;
+}
+
+.extras .col-6:nth-child(3) .img-wrapper::after {
+    content: "";
+    position: absolute;
+    top: -0.25rem;
+    right: -0.25rem;
+    font-size: 14px;
+    height: 24px;
+    width: 24px;
+    line-height: 24px;
+    background-color: #f9b233;
+    border-radius: 100%;
+    color: white;
+    background-image: url("../../../campery/assets/images/svg/snowflake.svg");
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+
+.extras h3 {
+    margin-bottom: 1.5rem;
 }
 
 .extras .price-extra {
     color: #1d1d1b;
-    font-size: 15px
+    font-size: 15px;
 }
 
 .gallery-top {
     height: 300px;
-    width: 100%
+    width: 100%;
 }
 
-@media(max-width:576px) {
+@media (max-width: 576px) {
     .gallery-top {
-        height: 200px
+        height: 200px;
     }
 }
 
@@ -1411,12 +1741,12 @@ footer#footer .bottom-info .social-wrapper i {
     background-position: center;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain
+    background-size: contain;
 }
 
-@media(min-width:768px) and (max-width:1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .gallery-top .swiper-slide {
-        background-size: 90%
+        background-size: 90%;
     }
 }
 
@@ -1424,55 +1754,55 @@ footer#footer .bottom-info .social-wrapper i {
     height: 130px;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    padding: 10px 0
+    padding: 10px 0;
 }
 
-@media(max-width:1024px) {
+@media (max-width: 1024px) {
     .gallery-thumbs .swiper-wrapper {
         -moz-box-pack: center;
         -ms-flex-pack: center;
-        justify-content: center
+        justify-content: center;
     }
 }
 
-@media(max-width:576px) {
+@media (max-width: 576px) {
     .gallery-thumbs {
-        height: 70px
+        height: 70px;
     }
 }
 
 .gallery-thumbs .swiper-slide {
     height: 100%;
-    opacity: .4;
+    opacity: 0.4;
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    background-position: center
+    background-position: center;
 }
 
 .gallery-thumbs .swiper-slide:hover {
-    cursor: pointer
+    cursor: pointer;
 }
 
 .gallery-thumbs .swiper-slide-thumb-active {
-    opacity: 1
+    opacity: 1;
 }
 
 .newsletter {
-    background-color: rgba(216, 216, 216, 0.13)
+    background-color: rgba(216, 216, 216, 0.13);
 }
 
 .newsletter input[type="email"] {
     width: 60%;
     margin-right: 9%;
     float: left;
-    display: inline-block
+    display: inline-block;
 }
 
-@media(max-width:576px) {
+@media (max-width: 576px) {
     .newsletter input[type="email"] {
         width: 100%;
-        margin-right: 0
+        margin-right: 0;
     }
 }
 
@@ -1488,28 +1818,28 @@ footer#footer .bottom-info .social-wrapper i {
     position: relative;
     font-size: 17px;
     z-index: 999;
-    border: none !important
+    border: none !important;
 }
 
-@media(max-width:576px) {
+@media (max-width: 576px) {
     .newsletter .button-1 {
         padding: 1em;
-        font-size: 15px
+        font-size: 15px;
     }
 }
 
 .newsletter .button-1:hover {
     text-decoration: none;
     color: white !important;
-    cursor: pointer
+    cursor: pointer;
 }
 
 .newsletter .button-1:hover:after {
-    width: 100%
+    width: 100%;
 }
 
 .newsletter .button-1:after {
-    content: '';
+    content: "";
     width: 0;
     position: absolute;
     top: 0;
@@ -1518,15 +1848,15 @@ footer#footer .bottom-info .social-wrapper i {
     bottom: 0;
     display: block;
     background-color: black;
-    -moz-transition-duration: .4s;
-    -o-transition-duration: .4s;
-    transition-duration: .4s;
-    z-index: -1
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    z-index: -1;
 }
 
-@media(max-width:767px) {
+@media (max-width: 767px) {
     .newsletter .button-1 {
-        margin-top: 2em
+        margin-top: 2em;
     }
 }
 
@@ -1534,257 +1864,271 @@ footer#footer .bottom-info .social-wrapper i {
     padding-left: 2.5em;
     font-weight: 700;
     color: #1d1d1b;
-    -moz-transition-duration: .4s;
-    -o-transition-duration: .4s;
-    transition-duration: .4s
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
 }
 
 .prev-link:before {
-    content: '';
-    -moz-transition-duration: .4s;
-    -o-transition-duration: .4s;
-    transition-duration: .4s;
+    content: "";
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
     background-image: url("../../../campery/assets/images/svg/arrow-back.svg");
     background-size: cover;
     width: 30px;
     top: 3px;
     height: 20px;
     position: absolute;
-    display: block
+    display: block;
 }
 
-@media(max-width:576px) {
+@media (max-width: 576px) {
     .prev-link:before {
-        top: 1px
+        top: 1px;
     }
 }
 
 .prev-link:hover {
-    color: #1d1d1b
+    color: #1d1d1b;
 }
 
 .prev-link:hover:before {
-    margin-left: -5px
+    margin-left: -5px;
 }
 
 .error404 {
-    overflow: hidden
+    overflow: hidden;
 }
 
 .error404 .hero-class .centered-absolute-max {
-    top: 50%
+    top: 50%;
 }
 
 .error404 .hero-class {
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative
+    position: relative;
 }
 
 .error404 .hero-class h1 {
-    font-weight: 700
+    font-weight: 700;
 }
 
 .error404 footer#footer .bckg-foot {
-    display: none
+    display: none;
 }
 
 .home .hero-class {
     height: 125vh;
+    height: auto;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%
+    width: 100%;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
-@media(max-width:1200px) {
+/* @media (max-width: 1200px) {
     .home .hero-class {
-        height: 75vh
+        height: 75vh;
     }
 }
 
-@media(max-width:992px) {
+@media (max-width: 992px) {
     .home .hero-class {
-        height: 65vh
+        height: 65vh;
     }
 }
 
-@media(max-width:576px) {
+@media (max-width: 576px) {
     .home .hero-class {
-        height: 85vh
+        height: 85vh;
     }
-}
+} */
 
 .home .hero-class h1 {
     font-size: 64px;
-    font-weight: 700
+    font-weight: 700;
 }
 
-@media(max-width:992px) {
+@media (max-width: 992px) {
     .home .hero-class h1 {
-        font-size: 32px
+        font-size: 32px;
     }
 }
 
-@media(max-width:576px) {
+@media (max-width: 576px) {
     .home .hero-class h1 {
-        font-size: 25px
+        font-size: 25px;
     }
 }
 
 .home .hero-class .button {
-    margin-top: .5em
+    margin-top: 0.5em;
 }
 
 .home .hero-class .centered-absolute {
     top: 45%;
-    width: 100%
+    width: 100%;
 }
 
-@media(max-width:576px) {
+@media (max-width: 576px) {
     .home .hero-class .centered-absolute {
         right: 1em;
         left: 1em;
-        width: auto
+        width: auto;
     }
 }
 
 .home .hero-class:before {
-    content: '';
+    content: "";
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(221, 221, 221, 0)), to(rgba(0, 0, 0, 0.65)))
+    background: -webkit-gradient(linear,
+            left top,
+            left bottom,
+            from(rgba(221, 221, 221, 0)),
+            to(rgba(0, 0, 0, 0.65)));
 }
 
-@media(min-width:992px) {
+@media (min-width: 992px) {
     .home .hero-class:after {
-        content: '';
+        content: "";
         background-image: url("../../../campery/assets/images/png/mud.png");
         width: 100%;
-        background-size: cover;
+        background-size: contain;
         background-repeat: no-repeat;
-        height: 23vh;
-        position: relative;
+        height: 100%;
+        position: absolute;
         display: block;
-        margin-top: -12%
+        margin: 0;
+        bottom: -1px;
+        margin: auto;
+        background-position: bottom;
     }
 }
 
 .home .hero-class:after * {
-    color: white
+    color: white;
 }
 
 .home .hero-class:after .button-1,
 .home .hero-class:after .button {
-    color: black
+    color: black;
 }
 
 .home .hero-class:after .button-1:hover,
 .home .hero-class:after .button:hover {
-    color: white
+    color: white;
 }
 
 .home .hero-class .centered-absolute {
-    height: 25%
+    height: 25%;
 }
 
 .wrapper {
     display: block;
     height: 100%;
-    width: 100%
+    width: 100%;
 }
 
 .sec-header {
     text-align: center;
     color: rgba(29, 29, 27, 0.49);
-    margin-bottom: .25em
+    margin-bottom: 0.25em;
 }
 
 .features-list {
-    margin-top: -22%
+    margin-top: -22%;
 }
 
-@media(max-width:576px) {
+@media (max-width: 576px) {
     .features-list {
-        margin-top: -28%
+        margin-top: -28%;
     }
 }
 
 .features-list .sec-header {
-    color: white
+    color: white;
+}
+
+.features-list .row {
+    margin: 0 -1.5rem;
 }
 
 .features-list .single-feature {
     text-align: center;
     height: 190px;
-    box-shadow: 0 0 17px -2px rgba(0, 0, 0, 0.5);
-    background-color: white
+    box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.5);
+    background-color: white;
 }
 
 .features-list .single-feature p {
-    font-size: 16px
+    font-size: 16px;
 }
 
 .features-list .single-feature * {
-    color: #1d1d1b
+    color: #1d1d1b;
 }
 
 .featured-vehicles {
-    padding: 7em 0
+    padding: 7em 0;
 }
 
-@media(max-width:576px) {
+@media (max-width: 576px) {
     .featured-vehicles {
-        padding: 2em 0
+        padding: 2em 0;
     }
 }
 
 .featured-vehicles .col-lg-4>.row {
-    height: 100%
+    height: 100%;
 }
 
 .featured-vehicles .wrapper {
     box-shadow: 0 7px 21px 2px rgba(0, 0, 0, 0.1);
     min-height: 460px;
-    position: relative
+    position: relative;
 }
 
 .featured-vehicles .wrapper .name {
     font-weight: 500;
     font-size: 21px;
-    color: #1d1d1b
+    color: #1d1d1b;
 }
 
 .featured-vehicles .wrapper .button {
     position: absolute;
     bottom: 2em;
     right: 2em;
-    left: 2em
+    left: 2em;
 }
 
 .featured-vehicles .wrapper .feat strong {
-    font-size: 13px
+    font-size: 13px;
 }
 
 .featured-vehicles .wrapper .feat span {
     font-size: 15px;
     margin-left: 4px;
-    color: rgba(29, 29, 27, 0.49)
+    color: rgba(29, 29, 27, 0.49);
 }
 
-@media(min-width:1330px) {
+@media (min-width: 1330px) {
     .featured-vehicles .wrapper img {
-        margin-top: -50%
+        margin-top: -50%;
     }
 }
 
 .featured-vehicles .featured-items-list {
     overflow: auto;
     padding-left: 0;
-    margin-bottom: 4.5em
+    margin-bottom: 4.5em;
 }
 
 .featured-vehicles .featured-items-list li {
@@ -1794,50 +2138,89 @@ footer#footer .bottom-info .social-wrapper i {
     margin-bottom: 3px;
     padding-left: 1.75em;
     position: relative;
-    color: rgba(29, 29, 27, 0.49)
+    color: rgba(29, 29, 27, 0.49);
 }
 
 .featured-vehicles .featured-items-list li:before {
-    content: '✓';
+    content: "✓";
     position: absolute;
     left: 0;
     margin-right: 5px;
     margin-left: 5px;
-    color: #f9b233
+    color: #f9b233;
 }
 
 .widget {
-    margin-top: 10%
+    margin-top: 10%;
 }
 
 .how-to-rent {
     counter-reset: steps;
-    padding: 5em 0
+    padding: 5em 0;
+}
+
+.how-to-rent:after {
+    content: "";
+    background: url(../../../campery/assets/images/svg/road.svg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 110% auto;
+    background-position: center 329px;
+    z-index: -1;
+    max-width: calc(100vw - 15px);
+}
+
+@media (max-width: 1300px) {
+    .how-to-rent .row:nth-child(2) {
+        transform: scale(0.8) translateY(-60px);
+    }
+}
+
+@media (max-width: 1100px) {
+    .how-to-rent .row:nth-child(2) {
+        transform: scale(0.8) translateY(-80px);
+    }
+}
+
+@media (max-width: 991px) {
+    .how-to-rent .row:nth-child(2) {
+        transform: none;
+    }
+
+    .how-to-rent:after {
+        display: none;
+    }
 }
 
 .how-to-rent .header-sec {
-    margin-bottom: 7em
+    margin-bottom: 7em;
 }
 
-@media(max-width:576px) {
+@media (max-width: 576px) {
     .how-to-rent .header-sec {
-        margin-bottom: 1em
+        margin-bottom: 1em;
     }
 }
 
 .how-to-rent .header-sec h2 {
-    text-align: center
+    text-align: center;
 }
 
 .how-to-rent .single-step h3 {
     font-weight: 700;
     font-size: 21px;
-    margin-bottom: 1.5em
+    margin-bottom: 1.5em;
 }
 
-@media(max-width:576px) {
+@media (max-width: 576px) {
     .how-to-rent .single-step h3 {
-        font-size: 17px
+        font-size: 17px;
     }
 }
 
@@ -1847,16 +2230,54 @@ footer#footer .bottom-info .social-wrapper i {
     margin-bottom: 2em;
     color: #f9b233;
     font-size: 36px;
-    display: block
+    display: inline-block;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 70px;
+    background-color: #ffffff;
+    box-shadow: 0 7px 30px 3px rgba(0, 0, 0, 0.05);
+    border-radius: 100%;
+    line-height: 70px;
+}
+
+.how-to-rent .single-step:nth-of-type(1):after {
+    content: url(../../../campery/assets/images/svg/traveler.svg);
+    position: absolute;
+    position: absolute;
+    top: 32px;
+    left: 20px;
+    right: 0;
+    margin: auto;
+    z-index: -1;
+    transform: translateY(-100%);
+}
+
+.how-to-rent .single-step:nth-of-type(5):after {
+    content: url(../../../campery/assets/images/svg/camper.svg);
+    position: absolute;
+    position: absolute;
+    top: 22px;
+    left: -20px;
+    right: 0;
+    margin: auto;
+    z-index: -1;
+    transform: translateY(-100%);
 }
 
 .how-to-rent .single-step:nth-of-type(2),
 .how-to-rent .single-step:nth-of-type(4) {
-    margin-top: 5%
+    margin-top: 62px;
+}
+
+.how-to-rent .single-step:nth-of-type(1),
+.how-to-rent .single-step:nth-of-type(5) {
+    margin-top: -5px;
 }
 
 .how-to-rent .single-step:nth-of-type(3) {
-    margin-top: -5%
+    margin-top: -36px;
 }
 
 .destinations {
@@ -1865,51 +2286,63 @@ footer#footer .bottom-info .social-wrapper i {
     width: 100%;
     background-position: center;
     padding-top: 6em;
-    margin: 3em 0
+    margin: 3em 0;
+    background-attachment: fixed;
+    position: relative;
+    padding-bottom: 200px;
 }
 
 .destinations:after {
-    content: '';
+    content: "";
     background-image: url("../../../campery/assets/images/png/mud.png");
     width: 100%;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    height: 23vh;
+    height: 100%;
+    position: absolute;
+    display: block;
+    margin: 0;
+    bottom: -1px;
+    margin: auto;
+    background-position: bottom;
+}
+
+.destinations .row {
+    z-index: 1;
     position: relative;
-    display: block
 }
 
 .destinations * {
-    color: white
+    color: white;
 }
 
 .destinations * .button-1,
 .destinations * .button {
-    color: black
+    color: black;
 }
 
 .destinations * .button-1:hover,
 .destinations * .button:hover {
-    color: white
+    color: white;
 }
 
 .destinations .sec-header {
-    color: #a8a8a8
+    color: #a8a8a8;
 }
 
 .destinations .txt {
-    color: #a8a8a8
+    color: #a8a8a8;
 }
 
 .destinations .txt strong {
-    color: white
+    color: white;
 }
 
 .destinations .wrapper {
     background-repeat: no-repeat;
     background-size: cover;
     height: 40vh;
-    position: relative
+    position: relative;
 }
 
 .destinations .wrapper .name {
@@ -1922,33 +2355,33 @@ footer#footer .bottom-info .social-wrapper i {
     -moz-transform: translate(-50%, 0);
     -ms-transform: translate(-50%, 0);
     -o-transform: translate(-50%, 0);
-    transform: translate(-50%, 0)
+    transform: translate(-50%, 0);
 }
 
 .destinations ul {
     padding: 0;
-    width: 100%
+    width: 100%;
 }
 
 .destinations ul li {
     width: 19.5%;
-    padding: 0 .4em;
-    -moz-transition-duration: .4s;
-    -o-transition-duration: .4s;
-    transition-duration: .4s
+    padding: 0 0.4em;
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
 }
 
-@media(max-width:1200px) {
+@media (max-width: 1200px) {
     .destinations ul li {
         width: 48%;
-        margin-bottom: 2em
+        margin-bottom: 2em;
     }
 }
 
-@media(max-width:576px) {
+@media (max-width: 576px) {
     .destinations ul li {
         width: 100%;
-        margin-bottom: 2em
+        margin-bottom: 2em;
     }
 }
 
@@ -1956,70 +2389,96 @@ footer#footer .bottom-info .social-wrapper i {
     -moz-transform: scale(1.1);
     -ms-transform: scale(1.1);
     -o-transform: scale(1.1);
-    transform: scale(1.1)
+    transform: scale(1.1);
+}
+
+.roadtrips .wrapper .shadow-box {
+    padding: 0 !important;
 }
 
 .roadtrips .wrapper .name {
     font-size: 21px;
     color: #1d1d1b;
     font-weight: 500;
-    margin-bottom: 1em
+    margin-bottom: 1em;
+}
+
+.roadtrips .wrapper img,
+.archive .single-post img {
+    transition: 0.4s;
+}
+
+.roadtrips .wrapper:hover img,
+.archive .single-post:hover img {
+    opacity: 0.4;
 }
 
 .roadtrips .wrapper .excerpt p {
     color: rgba(29, 29, 27, 0.71);
-    margin-bottom: 1.1em
+    margin-bottom: 1.1em;
 }
 
 .roadtrips .wrapper strong {
     color: #1d1d1b;
     font-size: 15px;
     top: -3px;
-    position: relative
+    position: relative;
 }
 
 .roadtrips .wrapper span {
     color: rgba(29, 29, 27, 0.49);
     font-size: 15px;
     top: -3px;
-    position: relative
+    position: relative;
 }
 
 .about-us {
-    padding: 5em 0
+    padding: 5em 0;
 }
 
 .about-us ul {
-    padding: 0
+    padding: 0;
 }
 
 .about-us ul li {
     list-style-type: none;
     margin-bottom: 2.5em;
-    padding-left: 3em
+    padding-left: 4em;
+    position: relative;
 }
 
-@media(max-width:576px) {
+@media (max-width: 576px) {
     .about-us ul li {
         margin-bottom: 1.5em;
-        padding-left: 2em
+        padding-left: 2em;
     }
 }
 
 .about-us ul li:before {
-    content: '✓';
+    content: "✓";
     position: absolute;
     left: 0;
+    top: 0;
+    bottom: 0;
     font-size: 22px;
     margin-right: 1.8em;
     margin-left: 5px;
-    color: #f9b233
+    color: #f9b233;
+    height: 47px;
+    width: 47px;
+    background-color: #ffffff;
+    box-shadow: 0 7px 30px 3px rgba(0, 0, 0, 0.05);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 }
 
-@media(max-width:576px) {
+@media (max-width: 576px) {
     .about-us ul li:before {
         margin-right: 1em;
-        font-size: 16px
+        font-size: 16px;
     }
 }
 
@@ -2027,37 +2486,33 @@ footer#footer .bottom-info .social-wrapper i {
     background-repeat: no-repeat;
     background-size: contain;
     width: 100%;
-    background-position: center
+    background-position: center;
 }
 
 .camper {
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     position: absolute;
-    width: 41%;
+    width: 50%;
     top: 0;
     right: 0;
     left: 0;
-    bottom: 0
+    bottom: 0;
 }
 
-@media(max-width:1500px) {
-    .camper {
-        background-size: contain
-    }
-}
-
-@media(max-width:992px) {
+@media (max-width: 992px) {
     .camper {
         position: relative;
         width: 100%;
         background-size: contain;
-        height: 25vh
+        height: 25vh;
     }
 }
 
 .buy-camper ul {
-    padding: 0
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .buy-camper ul li {
@@ -2065,30 +2520,44 @@ footer#footer .bottom-info .social-wrapper i {
     margin-bottom: 2em;
     display: inline-block;
     position: relative;
-    padding-left: 3em;
-    margin-right: 2em;
-    vertical-align: top
+    padding-left: 3.5em;
+    margin-right: 1.5em;
+    vertical-align: top;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .buy-camper ul li:before {
-    content: '✓';
+    content: "✓";
     margin-right: 1.4em;
     margin-left: 5px;
     color: #f9b233;
     font-size: 22px;
     position: absolute;
-    left: 0
+    left: 0;
+    top: 0;
+    bottom: 0;
+    height: 47px;
+    width: 47px;
+    background-color: #ffffff;
+    box-shadow: 0 7px 30px 3px rgba(0, 0, 0, 0.05);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 }
 
-@media(max-width:576px) {
+@media (max-width: 576px) {
     .buy-camper ul li:before {
-        font-size: 16px
+        font-size: 16px;
     }
 }
 
 .buy-camper .button-1 {
     float: left;
-    margin-top: 1em
+    margin-top: 1em;
 }
 
 .faq-bckg {
@@ -2096,28 +2565,28 @@ footer#footer .bottom-info .social-wrapper i {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 40% 75%;
-    padding: 5em 0
+    padding: 5em 0;
 }
 
-@media(max-width:992px) {
+@media (max-width: 992px) {
     .faq-bckg {
-        padding: 2em 0
+        padding: 2em 0;
     }
 }
 
 .faq {
-    padding: 4em 0
+    padding: 4em 0;
 }
 
-@media(max-width:576px) {
+@media (max-width: 576px) {
     .faq {
-        padding: 0
+        padding: 0;
     }
 }
 
 .faq .faq-list {
     padding: 0;
-    overflow: auto
+    overflow: auto;
 }
 
 .faq .faq-list li {
@@ -2125,21 +2594,21 @@ footer#footer .bottom-info .social-wrapper i {
     vertical-align: top;
     padding-right: 1em;
     display: inline-block;
-    list-style-type: none
+    list-style-type: none;
 }
 
-@media(max-width:576px) {
+@media (max-width: 576px) {
     .faq .faq-list li {
-        width: 100%
+        width: 100%;
     }
 }
 
-@media(min-width:992px) {
+@media (min-width: 992px) {
 
     .faq .faq-list li:nth-of-type(2n),
     .faq .faq-list li:nth-of-type(4n) {
         padding-left: 2em;
-        padding-right: 0
+        padding-right: 0;
     }
 }
 
@@ -2150,75 +2619,85 @@ footer#footer .bottom-info .social-wrapper i {
     font-weight: 500;
     padding-top: 1.5em;
     padding-right: 1.5em;
-    position: relative
+    position: relative;
 }
 
 .faq .faq-list li h3 .plus-minus-toggle {
-    top: 2em
+    top: 2em;
 }
 
-@media(max-width:576px) {
+@media (max-width: 576px) {
     .faq .faq-list li h3 .plus-minus-toggle {
-        top: 3em
+        top: 3em;
     }
 }
 
 .faq .faq-list li p {
-    display: none
+    display: none;
 }
 
 .contact-info {
-    display: inline-block
+    display: inline-block;
 }
 
 .contact-info p {
-    display: inline-block
+    display: inline-block;
 }
 
 .contact-info:before {
     display: inline-block;
-    vertical-align: top
+    vertical-align: top;
 }
 
 .contact-info:after {
-    top: 10px
+    top: 10px;
 }
 
 .for-sale .button,
 .for-rent .button {
-    font-size: 15px
+    font-size: 15px;
 }
 
 .for-sale .vehicle-raport,
 .for-rent .vehicle-raport {
-    padding: 0
+    padding: 0;
 }
 
-@media(min-width:576px) {
+.for-sale .name,
+.for-rent .name {
+    margin-bottom: 0.5rem !important;
+}
+
+.for-sale .col-12.col-lg.mt-lg-4.mb-lg-5.mt-1.mb-3,
+.for-rent .col-12.col-lg.mt-lg-4.mb-lg-5.mt-1.mb-3 {
+    margin-bottom: 3.25rem !important;
+}
+
+@media (min-width: 576px) {
 
     .for-sale .vehicle-raport,
     .for-rent .vehicle-raport {
         columns: 2;
         -webkit-columns: 2;
-        -moz-columns: 2
+        -moz-columns: 2;
     }
 }
 
 .for-sale .vehicle-raport li,
 .for-rent .vehicle-raport li {
-    list-style-type: none
+    list-style-type: none;
 }
 
 .for-sale .vehicle-raport li *,
 .for-rent .vehicle-raport li * {
-    font-size: 16px
+    font-size: 16px;
 }
 
-@media(max-width:576px) {
+@media (max-width: 576px) {
 
     .for-sale .vehicle-raport li *,
     .for-rent .vehicle-raport li * {
-        font-size: 14px
+        font-size: 14px;
     }
 }
 
@@ -2226,54 +2705,79 @@ footer#footer .bottom-info .social-wrapper i {
 .for-rent .wrapper {
     box-shadow: 0 7px 21px 2px rgba(0, 0, 0, 0.1);
     background-color: white;
-    margin-bottom: 5em
+    margin-bottom: 5em;
 }
 
-@media(max-width:576px) {
+@media (max-width: 576px) {
 
     .for-sale .wrapper,
     .for-rent .wrapper {
-        margin-bottom: 1em
+        margin-bottom: 1em;
     }
+}
+
+.for-sale .gallery-thumbs .swiper-slide,
+.for-rent .gallery-thumbs .swiper-slide {
+    border: 1px solid #e9e9e9;
 }
 
 .for-sale .wrapper .name,
 .for-rent .wrapper .name {
     font-size: 36px;
     font-weight: 700;
-    display: inline-block
+    display: inline-block;
 }
 
-@media(max-width:576px) {
+.for-rent {
+    position: relative;
+}
+
+.for-rent .wrapper:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: -2rem;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background-color: #e9e9e9;
+    margin: auto;
+}
+
+.for-rent ul {
+    margin-top: 4rem;
+}
+
+@media (max-width: 576px) {
 
     .for-sale .wrapper .name,
     .for-rent .wrapper .name {
-        font-size: 20px
+        font-size: 20px;
     }
 }
 
 .for-sale .wrapper strong,
 .for-rent .wrapper strong {
-    color: #1d1d1b
+    color: #1d1d1b;
 }
 
 .for-sale .wrapper .info-wrapper *,
 .for-rent .wrapper .info-wrapper * {
-    font-size: 16px
+    font-size: 16px;
 }
 
-@media(max-width:576px) {
+@media (max-width: 576px) {
 
     .for-sale .wrapper .info-wrapper *,
     .for-rent .wrapper .info-wrapper * {
-        font-size: 14px
+        font-size: 14px;
     }
 }
 
 .for-sale .wrapper .info-wrapper ul,
 .for-rent .wrapper .info-wrapper ul {
     overflow: auto;
-    padding: 0
+    padding: 0;
 }
 
 .for-sale .wrapper .info-wrapper ul li,
@@ -2284,72 +2788,76 @@ footer#footer .bottom-info .social-wrapper i {
     margin-bottom: 3px;
     padding-left: 1.3em;
     position: relative;
-    color: rgba(29, 29, 27, 0.71)
+    color: rgba(29, 29, 27, 0.71);
 }
 
 .for-sale .wrapper .info-wrapper ul li:before,
 .for-rent .wrapper .info-wrapper ul li:before {
-    content: '✓';
+    content: "✓";
     position: absolute;
     left: 0;
     margin-right: 5px;
     margin-left: 5px;
-    color: #f9b233
+    color: #f9b233;
 }
 
-@media(max-width:576px) {
+@media (max-width: 576px) {
 
     .for-sale .wrapper .info-wrapper ul li,
     .for-rent .wrapper .info-wrapper ul li {
         padding-left: 1.5em;
-        font-size: 14px
+        font-size: 14px;
     }
 }
 
 .price {
     color: #1d1d1b;
     font-size: 27px;
-    font-weight: 500
+    font-weight: 500;
 }
 
 .rental-price {
     font-size: 27px;
     font-weight: 500;
-    color: #1d1d1b
+    color: #1d1d1b;
 }
 
 .rental-price .condition {
     background-color: black;
-    padding: .2em 1em;
-    margin-top: 0;
+    padding: 0.2em 1em;
+    margin-top: 0px;
     color: white;
     display: inline-block;
     position: relative;
-    top: -9px
+    top: -9px;
 }
 
-@media(max-width:576px) {
+@media (max-width: 576px) {
     .rental-price .condition {
-        padding: .1em .5em;
+        padding: 0.1em 0.5em;
         margin-left: 1em;
         color: white;
-        top: -1px
+        top: -1px;
     }
 }
 
 .rental-price .condition.new {
-    background-color: #f9b233
+    background-color: #f9b233;
 }
 
-@media(max-width:992px) {
+.for-rent .col-lg-6 .col-lg-6 {
+    margin-top: 6rem;
+}
+
+@media (max-width: 992px) {
     .for-rent .rental-info {
-        margin-bottom: 2em
+        margin-bottom: 2em;
     }
 }
 
-@media(max-width:767px) {
+@media (max-width: 767px) {
     .for-rent .rental-info {
-        margin-bottom: 1em
+        margin-bottom: 1em;
     }
 }
 
@@ -2358,85 +2866,85 @@ footer#footer .bottom-info .social-wrapper i {
     font-weight: 500;
     font-size: 21px;
     line-height: 16px;
-    margin-bottom: 0
+    margin-bottom: 0;
 }
 
-@media(max-width:576px) {
+@media (max-width: 576px) {
     .for-rent .rental-info .bolder {
-        font-size: 16px
+        font-size: 16px;
     }
 }
 
 .for-rent .rental-info .smaller {
     font-size: 21px;
-    color: #1d1d1b
+    color: #1d1d1b;
 }
 
-@media(max-width:576px) {
+@media (max-width: 576px) {
     .for-rent .rental-info .smaller {
-        font-size: 16px
+        font-size: 16px;
     }
 }
 
 .insurance-class {
     padding-top: 6em;
     background-size: cover;
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
 }
 
-@media(max-width:576px) {
+@media (max-width: 576px) {
     .insurance-class {
-        padding-top: 4em
+        padding-top: 4em;
     }
 }
 
 .insurance-class:after {
-    content: '';
+    content: "";
     background-image: url("../../../campery/assets/images/png/mud.png");
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     height: 23vh;
     position: relative;
-    display: block
+    display: block;
 }
 
-@media(max-width:576px) {
+@media (max-width: 576px) {
     .insurance-class:after {
-        height: 10vh
+        height: 10vh;
     }
 }
 
 .insurance-class *:not(.button-1) {
-    color: white !important
+    color: white !important;
 }
 
 .insurance-class .bolder {
     font-size: 21px;
     font-weight: 500;
     line-height: 8px;
-    margin-top: .5em
+    margin-top: 0.5em;
 }
 
 .insurance-class .bolder .plan-cost {
-    padding: .2em .5em;
+    padding: 0.2em 0.5em;
     background-color: #f9b233;
     font-weight: 700;
-    font-size: 18px
+    font-size: 18px;
 }
 
-@media(max-width:576px) {
+@media (max-width: 576px) {
     .insurance-class .bolder .plan-cost {
-        padding: .7em .5em;
+        padding: 0.7em 0.5em;
         display: inline-block;
         font-size: 15px;
-        margin-top: 1em
+        margin-top: 1em;
     }
 }
 
-@media(max-width:576px) {
+@media (max-width: 576px) {
     .insurance-class .features-list-items {
-        padding: 0
+        padding: 0;
     }
 }
 
@@ -2448,28 +2956,28 @@ footer#footer .bottom-info .social-wrapper i {
     padding-left: 3em;
     width: 19%;
     font-size: 15px;
-    vertical-align: top
+    vertical-align: top;
 }
 
-@media(max-width:1200px) {
+@media (max-width: 1200px) {
     .insurance-class .features-list-items li {
         width: 50%;
         padding-right: 0;
-        margin-bottom: 2em
+        margin-bottom: 2em;
     }
 }
 
-@media(max-width:576px) {
+@media (max-width: 576px) {
     .insurance-class .features-list-items li {
         width: 100%;
         font-size: 14px;
         padding-right: 0;
-        margin-bottom: 2em
+        margin-bottom: 2em;
     }
 }
 
 .insurance-class .features-list-items li:before {
-    content: '✓';
+    content: "✓";
     position: absolute;
     left: 0;
     margin-right: 5px;
@@ -2479,45 +2987,46 @@ footer#footer .bottom-info .social-wrapper i {
     height: 30px;
     width: 30px;
     background-color: white;
-    border-radius: 50%
+    border-radius: 50%;
 }
 
-@media(max-width:576px) {
+@media (max-width: 576px) {
     .insurance-class .features-list-items li:before {
         padding: 2px 7px;
         height: 25px;
-        width: 25px
+        width: 25px;
     }
 }
 
 .single .hero-class {
-    height: 74vh
+    height: 74vh;
 }
 
-@media(max-width:1200px) {
+@media (max-width: 1200px) {
     .single .hero-class {
-        height: 30vh
+        height: 30vh;
     }
 }
 
-@media(max-width:576px) {
+@media (max-width: 576px) {
     .single .hero-class {
-        height: 50vh
+        height: 50vh;
     }
 }
 
 .page-template-blog .single-post,
 .archive .single-post,
-.single .single-post {
-    box-shadow: 0 0 17px -2px rgba(0, 0, 0, 0.1);
+.single .single-post,
+.roadtrips .wrapper .shadow-box {
+    box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.1);
     padding-bottom: 2em;
-    margin-bottom: 2em
+    margin-bottom: 2em;
 }
 
 .page-template-blog .single-post img,
 .archive .single-post img,
 .single .single-post img {
-    width: 100%
+    width: 100%;
 }
 
 .page-template-blog .single-post .thumbnail-wrapper,
@@ -2525,15 +3034,15 @@ footer#footer .bottom-info .social-wrapper i {
 .single .single-post .thumbnail-wrapper {
     height: 220px;
     overflow: hidden;
-    position: relative
+    position: relative;
 }
 
-@media(max-width:576px) {
+@media (max-width: 576px) {
 
     .page-template-blog .single-post .thumbnail-wrapper,
     .archive .single-post .thumbnail-wrapper,
     .single .single-post .thumbnail-wrapper {
-        height: 180px
+        height: 180px;
     }
 }
 
@@ -2549,63 +3058,63 @@ footer#footer .bottom-info .social-wrapper i {
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
 }
 
 .page-template-blog .single-post .excerpt p,
 .archive .single-post .excerpt p,
 .single .single-post .excerpt p {
-    font-size: 15px
+    font-size: 15px;
 }
 
 .page-template-blog .single-post a[href],
 .archive .single-post a[href],
 .single .single-post a[href] {
     font-weight: 700;
-    color: #1d1d1b
+    color: #1d1d1b;
 }
 
 .page-template-blog .localization-wrapper span,
 .archive .localization-wrapper span,
 .single .localization-wrapper span {
     font-size: 36px;
-    color: rgba(29, 29, 27, 0.49)
+    color: rgba(29, 29, 27, 0.49);
 }
 
-@media(max-width:992px) {
+@media (max-width: 992px) {
 
     .page-template-blog .localization-wrapper span,
     .archive .localization-wrapper span,
     .single .localization-wrapper span {
-        font-size: 20px
+        font-size: 20px;
     }
 }
 
 .page-template-blog .localization-wrapper .localization,
 .archive .localization-wrapper .localization,
 .single .localization-wrapper .localization {
-    color: #1d1d1b
+    color: #1d1d1b;
 }
 
 .page-template-blog .localization-wrapper .localization:before,
 .archive .localization-wrapper .localization:before,
 .single .localization-wrapper .localization:before {
-    content: '';
+    content: "";
     background-image: url("../../../campery/assets/images/svg/distance.svg");
     width: 30px;
     background-size: cover;
     background-repeat: no-repeat;
     height: 30px;
-    margin: 0 .25em;
+    margin: 0 0.25em;
     display: inline-block;
-    position: relative
+    position: relative;
 }
 
 .page-template-blog .single-post.wide,
 .archive .single-post.wide,
 .single .single-post.wide {
     height: 100%;
-    padding-bottom: 1em
+    padding-bottom: 1em;
 }
 
 .page-template-blog .single-post.wide .thumbnail-wrapper,
@@ -2614,7 +3123,7 @@ footer#footer .bottom-info .social-wrapper i {
     height: 300px;
     width: 100%;
     overflow: hidden;
-    position: relative
+    position: relative;
 }
 
 .page-template-blog .single-post.wide .thumbnail-wrapper .cat-label,
@@ -2625,12 +3134,12 @@ footer#footer .bottom-info .social-wrapper i {
     display: inline-block;
     color: white;
     position: relative;
-    padding: .2em .5em;
+    padding: 0.2em 0.5em;
     left: 1.5em;
-    top: 1.5em
+    top: 1.5em;
 }
 
-@media(min-width:992px) {
+@media (min-width: 992px) {
 
     .page-template-blog .single-post.wide .thumbnail-wrapper img,
     .archive .single-post.wide .thumbnail-wrapper img,
@@ -2643,18 +3152,18 @@ footer#footer .bottom-info .social-wrapper i {
         -moz-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
         -o-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%)
+        transform: translate(-50%, -50%);
     }
 }
 
-@media(min-width:992px) {
+@media (min-width: 992px) {
 
     .page-template-blog .single-post.wide .linked,
     .archive .single-post.wide .linked,
     .single .single-post.wide .linked {
         max-width: none;
         position: absolute;
-        bottom: 1em
+        bottom: 1em;
     }
 }
 
@@ -2662,67 +3171,53 @@ footer#footer .bottom-info .social-wrapper i {
 .archive .single-post.wide.black,
 .single .single-post.wide.black {
     padding-bottom: 0;
-    background-color: black
+    background-color: black;
 }
 
-@media(min-width:768px) and (max-width:1200px) {
-
-    .page-template-blog .single-post.wide.black,
-    .archive .single-post.wide.black,
-    .single .single-post.wide.black {
-        height: 30vh
-    }
-}
-
-@media(min-width:1330px) {
-
-    .page-template-blog .single-post.wide.black,
-    .archive .single-post.wide.black,
-    .single .single-post.wide.black {
-        height: 45vh
-    }
-}
-
-@media(min-width:992px) {
+@media (min-width: 992px) {
 
     .page-template-blog .single-post.wide.black .button-1,
     .archive .single-post.wide.black .button-1,
     .single .single-post.wide.black .button-1 {
         max-width: none;
-        position: absolute;
-        bottom: 3em;
-        right: 3em;
-        left: 3em
+        position: relative;
+        bottom: 0;
+        right: 0;
+        left: 0;
     }
+}
+
+.single-post.wide.black:hover img {
+    opacity: 1;
 }
 
 .page-template-blog .single-post.wide.black *,
 .archive .single-post.wide.black *,
 .single .single-post.wide.black * {
-    color: white
+    color: white;
 }
 
 .page-template-blog .single-post.wide.black .thumbnail-wrapper,
 .archive .single-post.wide.black .thumbnail-wrapper,
 .single .single-post.wide.black .thumbnail-wrapper {
-    height: 100%
+    height: 100%;
 }
 
-@media(max-width:992px) {
+@media (max-width: 992px) {
 
     .page-template-blog .single-post.wide.black .thumbnail-wrapper,
     .archive .single-post.wide.black .thumbnail-wrapper,
     .single .single-post.wide.black .thumbnail-wrapper {
-        height: 300px
+        height: 300px;
     }
 }
 
-@media(max-width:576px) {
+@media (max-width: 576px) {
 
     .page-template-blog .single-post.wide.black .thumbnail-wrapper,
     .archive .single-post.wide.black .thumbnail-wrapper,
     .single .single-post.wide.black .thumbnail-wrapper {
-        height: 180px
+        height: 180px;
     }
 }
 
@@ -2734,23 +3229,23 @@ footer#footer .bottom-info .social-wrapper i {
     z-index: 999;
     display: inline-block;
     position: relative;
-    padding: .2em .5em
+    padding: 0.2em 0.5em;
 }
 
 .archive .single-post {
-    margin-bottom: 0
+    margin-bottom: 0;
 }
 
 .swiper-button-prev {
     left: -11%;
-    background-image: url("../../../campery/assets/images/svg/arrow-back.svg")
+    background-image: url("../../../campery/assets/images/svg/arrow-back.svg");
 }
 
-@media(max-width:1200px) {
+@media (max-width: 1440px) {
     .swiper-button-prev {
         left: auto;
         right: 15%;
-        top: 17.1%
+        top: 17.1%;
     }
 }
 
@@ -2760,46 +3255,46 @@ footer#footer .bottom-info .social-wrapper i {
     -moz-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     -o-transform: rotate(180deg);
-    transform: rotate(180deg)
+    transform: rotate(180deg);
 }
 
-@media(max-width:1200px) {
+@media (max-width: 1440px) {
     .swiper-button-next {
         left: auto;
         right: 0;
-        top: 17%
+        top: 17%;
     }
 }
 
 .swiper-slide img {
     width: 100%;
-    height: auto
+    height: auto;
 }
 
 .single-list-item-elems:nth-of-type(1n) {
-    padding-right: 1.5em
+    padding-right: 1.5em;
 }
 
 .single-list-item-elems:nth-of-type(2n) {
-    padding: 0 1em
+    padding: 0 1em;
 }
 
 .single-list-item-elems:nth-of-type(3n) {
     padding-left: 1.5em;
-    padding-right: 0
+    padding-right: 0;
 }
 
 .single-list-item-elems p {
-    font-size: 15px
+    font-size: 15px;
 }
 
 .single-list-item-elems img {
-    height: 200px
+    height: 200px;
 }
 
 .sl-wrapper {
     display: inline-block;
-    position: relative
+    position: relative;
 }
 
 .sl-wrapper .sl-icon {
@@ -2809,22 +3304,22 @@ footer#footer .bottom-info .social-wrapper i {
     float: left;
     top: -2px;
     fill: rgba(29, 29, 27, 0.49);
-    position: relative
+    position: relative;
 }
 
 .sl-wrapper #sl-loader {
     position: absolute;
     font-size: 12px;
     left: 0;
-    top: 1em
+    top: 1em;
 }
 
 .sl-wrapper .loader {
-    font-size: 12px
+    font-size: 12px;
 }
 
 .view-counter:before {
-    content: '';
+    content: "";
     background-image: url("../../../campery/assets/images/svg/eye-outline.svg");
     background-repeat: no-repeat;
     background-size: contain;
@@ -2833,11 +3328,11 @@ footer#footer .bottom-info .social-wrapper i {
     top: 4px;
     margin-right: 20px;
     display: inline-block;
-    position: relative
+    position: relative;
 }
 
 .reading-time:before {
-    content: '';
+    content: "";
     background-image: url("../../../campery/assets/images/svg/clock-outline.svg");
     background-repeat: no-repeat;
     background-size: contain;
@@ -2846,55 +3341,55 @@ footer#footer .bottom-info .social-wrapper i {
     margin-right: 20px;
     width: 20px;
     display: inline-block;
-    position: relative
+    position: relative;
 }
 
 .single-road-trips .time:before {
-    content: '';
+    content: "";
     background-image: url("../../../campery/assets/images/svg/distance.svg");
     width: 30px;
     background-size: cover;
     background-repeat: no-repeat;
     height: 30px;
-    margin: 0 .25em;
+    margin: 0 0.25em;
     display: inline-block;
-    position: relative
+    position: relative;
 }
 
 .single-road-trips .dist:before {
-    content: '';
+    content: "";
     background-image: url("../../../campery/assets/images/svg/distance.svg");
     width: 30px;
     background-size: cover;
     background-repeat: no-repeat;
     height: 30px;
-    margin: 0 .25em;
+    margin: 0 0.25em;
     display: inline-block;
-    position: relative
+    position: relative;
 }
 
 .single-road-trips .text-tip:before {
-    background-color: white
+    background-color: white;
 }
 
 .single-road-trips strong {
-    color: #1d1d1b
+    color: #1d1d1b;
 }
 
 .single-road-trips .list-point {
     margin-bottom: 2.2em;
     padding-left: 2em;
-    position: relative
+    position: relative;
 }
 
-@media(max-width:576px) {
+@media (max-width: 576px) {
     .single-road-trips .list-point {
-        padding-left: 2.5em
+        padding-left: 2.5em;
     }
 }
 
 .single-road-trips .list-point:before {
-    content: '';
+    content: "";
     background-image: url("../../../campery/assets/images/png/stop-location.png");
     background-size: contain;
     background-color: #f9b233;
@@ -2911,26 +3406,26 @@ footer#footer .bottom-info .social-wrapper i {
     -ms-transform: translate(0, -50%);
     -o-transform: translate(0, -50%);
     transform: translate(0, -50%);
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
 }
 
-@media(max-width:576px) {
+@media (max-width: 576px) {
     .single-road-trips .list-point:before {
         width: 35px;
         height: 35px;
         background-position: 11px;
-        background-size: 14px
+        background-size: 14px;
     }
 }
 
 .sticker {
     position: -webkit-sticky;
     position: sticky;
-    top: 8em
+    top: 8em;
 }
 
 .single-campers .hero-class {
-    height: 50vh
+    height: 50vh;
 }
 
 .single-campers .rental-info .bolder {
@@ -2939,68 +3434,79 @@ footer#footer .bottom-info .social-wrapper i {
     font-size: 21px;
     line-height: 16px;
     margin-top: 1em;
-    margin-bottom: 0
+    margin-bottom: 0;
 }
 
-@media(max-width:576px) {
+@media (max-width: 576px) {
     .single-campers .rental-info .bolder {
-        font-size: 16px
+        font-size: 16px;
     }
 }
 
 .single-campers .rental-info .rental-price {
     font-size: 27px;
     font-weight: 500;
-    color: #1d1d1b
+    color: #1d1d1b;
 }
 
 .single-campers .rental-info .smaller {
     font-size: 21px;
-    color: #1d1d1b
+    color: #1d1d1b;
 }
 
-@media(max-width:576px) {
+@media (max-width: 576px) {
     .single-campers .rental-info .smaller {
-        font-size: 16px
+        font-size: 16px;
     }
 }
 
 .single-campers .rental-info .button {
     position: absolute;
     width: 100%;
-    bottom: 0
+    bottom: 0;
 }
 
 .single-campers .specs>div {
-    margin-bottom: 2.4em
+    margin-bottom: 2.4em;
 }
 
 .single-campers .specs>div strong {
     color: #1d1d1b;
-    margin-right: .75em
+    margin-right: 0.75em;
 }
 
 .single-campers .featured-items-list {
-    overflow: auto;
+    overflow: initial;
     padding-left: 0;
-    margin-bottom: 2.5em
+    margin-bottom: 2.5em;
 }
 
 .single-campers .featured-items-list li {
     list-style-type: none;
     margin-bottom: 2em;
-    padding-left: 1.75em;
+    padding-left: 0;
     position: relative;
-    display: block
+    display: block;
 }
 
 .single-campers .featured-items-list li:before {
-    content: '✓';
-    position: absolute;
+    content: "✓";
+    position: relative;
     left: 0;
     margin-right: 5px;
     margin-left: 5px;
-    color: #f9b233
+    color: #f9b233;
+    width: auto;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 47px;
+    width: 47px;
+    background-color: #ffffff;
+    box-shadow: 0 7px 30px 3px rgba(0, 0, 0, 0.05);
+    border-radius: 100%;
+    line-height: 47px;
+    margin-right: 1rem;
 }
 
 body .cookie-info {
@@ -3010,23 +3516,23 @@ body .cookie-info {
     background: #000;
     top: 0;
     bottom: auto;
-    font: 13px 'Source Sans Pro', sans-serif;
+    font: 13px "Source Sans Pro", sans-serif;
     text-align: left;
     padding: 0 40px;
     font-size: 13px;
     z-index: 9999;
     color: #fff;
-    overflow: hidden
+    overflow: hidden;
 }
 
 body .cookie-info-inner {
-    margin: 11px 0;
+    margin: 11px 0px;
     padding-right: 35px;
-    color: #fff
+    color: #fff;
 }
 
 body .cookie-info-header-title {
-    display: none
+    display: none;
 }
 
 body .cookie-info-header-close {
@@ -3034,10 +3540,10 @@ body .cookie-info-header-close {
     top: 50%;
     margin-top: -20px;
     right: -10px;
-    color: #000;
+    color: #000000;
     width: 40px;
     height: 39px;
-    font-weight: 700
+    font-weight: 700;
 }
 
 body .cookie-info-header-close a {
@@ -3045,7 +3551,7 @@ body .cookie-info-header-close a {
     width: 40px;
     overflow: hidden;
     text-indent: 9999px;
-    color: #fff
+    color: #fff;
 }
 
 body .cookie-info-header-close a::after {
@@ -3055,24 +3561,24 @@ body .cookie-info-header-close a::after {
     left: 50%;
     margin-left: -5px;
     margin-top: -5px;
-    text-indent: 0
+    text-indent: 0px;
 }
 
 body .cookie-x {
-    display: none
+    display: none;
 }
 
 body.admin-bar .cookie-info {
-    top: 32px
+    top: 32px;
 }
 
 body.cookie-no-accepted {
-    margin-top: 40px
+    margin-top: 40px;
 }
 
-@media(max-width:992px) {
+@media (max-width: 992px) {
     body .primary-navigation {
-        height: auto
+        height: auto;
     }
 }
 
@@ -3082,31 +3588,31 @@ header#header {
     width: 100%;
     padding-bottom: 1em;
     z-index: 9999;
-    -moz-transition-duration: .4s;
-    -o-transition-duration: .4s;
-    transition-duration: .4s
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
 }
 
 header#header .language-current {
     color: white;
-    cursor: pointer
+    cursor: pointer;
 }
 
-@media(max-width:576px) {
+@media (max-width: 576px) {
     header#header .language-current {
-        margin-top: 1em
+        margin-top: 1em;
     }
 }
 
 header#header .language-list {
     display: none;
     padding: 0;
-    list-style-type: none
+    list-style-type: none;
 }
 
 header#header .language-list * {
     color: white;
-    list-style-type: none
+    list-style-type: none;
 }
 
 header#header ul#menu-glowne,
@@ -3118,16 +3624,16 @@ header#header ul#menu-main {
     -ms-flex-pack: justify;
     justify-content: space-between;
     width: 100%;
-    margin-bottom: 0
+    margin-bottom: 0;
 }
 
-@media(max-width:992px) {
+@media (max-width: 992px) {
 
     header#header ul#menu-glowne,
     header#header ul#menu-main {
         display: block;
         width: 100%;
-        padding: 0
+        padding: 0;
     }
 }
 
@@ -3138,73 +3644,73 @@ header#header ul#menu-main li.menu-item {
     display: flex;
     -moz-box-align: center;
     -ms-flex-align: center;
-    align-items: center
+    align-items: center;
 }
 
 header#header ul#menu-glowne li.menu-item a,
 header#header ul#menu-main li.menu-item a {
     color: white;
-    padding: .75em 1em;
-    font-size: 16px
+    padding: 0.75em 1em;
+    font-size: 16px;
 }
 
 header#header ul#menu-glowne li.menu-item a:after,
 header#header ul#menu-main li.menu-item a:after {
-    content: '';
+    content: "";
     border-bottom: dotted 4px transparent;
     display: block;
     opacity: 0;
-    -moz-transition-duration: .4s;
-    -o-transition-duration: .4s;
-    transition-duration: .4s
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
 }
 
 header#header ul#menu-glowne li.menu-item a:hover:after,
 header#header ul#menu-main li.menu-item a:hover:after {
-    content: '';
+    content: "";
     border-bottom: dotted 4px #f9b233;
     display: block;
-    opacity: 1
+    opacity: 1;
 }
 
 header#header ul#menu-glowne .current_page_item a:after,
 header#header ul#menu-glowne .current-menu-item a:after,
 header#header ul#menu-main .current_page_item a:after,
 header#header ul#menu-main .current-menu-item a:after {
-    content: '';
+    content: "";
     border-bottom: dotted 4px #f9b233 !important;
-    opacity: 1 !important
+    opacity: 1 !important;
 }
 
 header#header ul#menu-glowne .button,
 header#header ul#menu-main .button {
-    padding: 0
+    padding: 0;
 }
 
-@media(max-width:768px) {
+@media (max-width: 768px) {
 
     header#header ul#menu-glowne .button,
     header#header ul#menu-main .button {
         max-width: 140px;
         margin-top: 1em;
-        margin-left: 1em
+        margin-left: 1em;
     }
 }
 
 header#header ul#menu-glowne .button a,
 header#header ul#menu-main .button a {
-    padding: .5em 1.5em !important;
-    color: black !important
+    padding: 0.5em 1.5em !important;
+    color: black !important;
 }
 
 header#header ul#menu-glowne .button a:hover,
 header#header ul#menu-main .button a:hover {
-    color: white !important
+    color: white !important;
 }
 
 header#header ul#menu-glowne .button a:after,
 header#header ul#menu-main .button a:after {
-    display: none !important
+    display: none !important;
 }
 
 .icon-bar {
@@ -3212,58 +3718,58 @@ header#header ul#menu-main .button a:after {
     height: 2px;
     background-color: white;
     display: block;
-    -o-transition: all .2s;
-    -moz-transition: all .2s;
-    transition: all .2s;
-    margin: 4px 0
+    -o-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+    margin: 4px 0;
 }
 
-@media(max-width:992px) {
+@media (max-width: 992px) {
     #navbarNavDropdown {
         position: absolute !important;
         overflow: hidden;
         background-color: rgba(255, 255, 255, 0.95);
         width: 100%;
-        -o-transition: all .2s;
-        -moz-transition: all .2s;
-        transition: all .2s;
+        -o-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        transition: all 0.2s;
         z-index: 9999;
         display: block;
         bottom: 0;
         top: 0;
         left: -200%;
         right: 0;
-        height: 100vh
+        height: 100vh;
     }
 }
 
 .collapse,
 .collapsing {
-    -o-transition: all .2s;
-    -moz-transition: all .2s;
-    transition: all .2s
+    -o-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
 }
 
 #navbarNavDropdown.show {
     left: 0;
-    -o-transition: all .2s;
-    -moz-transition: all .2s;
-    transition: all .2s
+    -o-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
 }
 
 body .collapse:not(.show) {
-    display: block
+    display: block;
 }
 
 .navbar-toggler {
-    border: 0;
+    border: none;
     position: relative;
     background: transparent !important;
-    z-index: 9999
+    z-index: 9999;
 }
 
 .navbar-light .navbar-toggler {
-    border: 0
+    border: none;
 }
 
 .navbar-toggler .top-bar {
@@ -3274,11 +3780,11 @@ body .collapse:not(.show) {
     -moz-transform-origin: 10% 10%;
     -ms-transform-origin: 10% 10%;
     -o-transform-origin: 10% 10%;
-    transform-origin: 10% 10%
+    transform-origin: 10% 10%;
 }
 
 .navbar-toggler .middle-bar {
-    opacity: 0
+    opacity: 0;
 }
 
 .navbar-toggler .bottom-bar {
@@ -3289,67 +3795,67 @@ body .collapse:not(.show) {
     -moz-transform-origin: 10% 90%;
     -ms-transform-origin: 10% 90%;
     -o-transform-origin: 10% 90%;
-    transform-origin: 10% 90%
+    transform-origin: 10% 90%;
 }
 
 .navbar-toggler.collapsed .top-bar {
     -moz-transform: rotate(0);
     -ms-transform: rotate(0);
     -o-transform: rotate(0);
-    transform: rotate(0)
+    transform: rotate(0);
 }
 
 .navbar-toggler.collapsed .middle-bar {
-    opacity: 1
+    opacity: 1;
 }
 
 .navbar-toggler.collapsed .bottom-bar {
     -moz-transform: rotate(0);
     -ms-transform: rotate(0);
     -o-transform: rotate(0);
-    transform: rotate(0)
+    transform: rotate(0);
 }
 
 .mceContentBody {
     width: 100%;
     font-size: 20px;
-    font-family: Arial
+    font-family: Arial;
 }
 
 .mceContentBody .alignleft {
     float: left;
-    margin-right: 15px
+    margin-right: 15px;
 }
 
 .mceContentBody .alignright {
     float: right;
-    margin-left: 15px
+    margin-left: 15px;
 }
 
 .mceContentBody .aligncenter {
-    margin: auto
+    margin: auto;
 }
 
 .mceContentBody .wp-caption {
     border: 1px solid #ccc;
     background: #efefef;
     text-align: left;
-    padding: 0
+    padding: 0;
 }
 
 .mceContentBody .wp-caption a {
-    display: block
+    display: block;
 }
 
 .mceContentBody .wp-caption img {
     margin-left: 5px;
-    margin-top: 5px
+    margin-top: 5px;
 }
 
 .mceContentBody .wp-caption .wp-caption-text {
     font-size: 12px;
     margin: 4px 5px;
-    line-height: normal
+    line-height: normal;
 }
 
 .mceContentBody a.btn-primary,
@@ -3358,26 +3864,26 @@ body .collapse:not(.show) {
     display: inline-block;
     border-radius: 15px;
     vertical-align: middle;
-    padding: 6px 15px
+    padding: 6px 15px;
 }
 
 .mceContentBody a.btn-primary {
     background: #000;
-    color: #fff
+    color: #fff;
 }
 
 .mceContentBody a.btn-primary:hover {
-    background: #039
+    background: #039;
 }
 
 .mceContentBody a.btn-secondary {
-    background: silver;
-    color: #000
+    background: #c0c0c0;
+    color: #000;
 }
 
 .mceContentBody a.btn-secondary:hover {
     background: #039;
-    color: #fff
+    color: #fff;
 }
 
 .mceContentBody blockquote {
@@ -3385,200 +3891,200 @@ body .collapse:not(.show) {
     margin-bottom: 10px;
     margin-left: 50px;
     padding-left: 15px;
-    border-left: 5px solid #000
+    border-left: 5px solid #000;
 }
 
 .mceContentBody blockquote cite {
     display: block;
     text-align: right;
-    padding-top: 5px
+    padding-top: 5px;
 }
 
 .mceContentBody p {
-    font-size: .8em
+    font-size: 0.8em;
 }
 
 .mceContentBody h1 {
-    font-size: 1.6em
+    font-size: 1.6em;
 }
 
 .mceContentBody h2 {
-    font-size: 1.5em
+    font-size: 1.5em;
 }
 
 .mceContentBody h3 {
-    font-size: 1.4em
+    font-size: 1.4em;
 }
 
 .mceContentBody h4 {
-    font-size: 1.3em
+    font-size: 1.3em;
 }
 
 .mceContentBody h5 {
-    font-size: 1.2em
+    font-size: 1.2em;
 }
 
 .mceContentBody h6 {
-    font-size: 1.1em
+    font-size: 1.1em;
 }
 
 .clear {
-    clear: both
+    clear: both;
 }
 
 .body-overlow {
     overflow-x: hidden;
-    overflow-y: visible
+    overflow-y: visible;
 }
 
 .container {
     max-width: 1160px;
     margin: auto;
-    width: 100%
+    width: 100%;
 }
 
 body {
     font-size: 20px;
     font-family: Arial;
-    font-weight: 300
+    font-weight: 300;
 }
 
 h1 {
-    font-size: 1.6em
+    font-size: 1.6em;
 }
 
 h2 {
-    font-size: 1.5em
+    font-size: 1.5em;
 }
 
 h3 {
-    font-size: 1.4em
+    font-size: 1.4em;
 }
 
 h4 {
-    font-size: 1.3em
+    font-size: 1.3em;
 }
 
 h5 {
-    font-size: 1.2em
+    font-size: 1.2em;
 }
 
 h6 {
-    font-size: 1.1em
+    font-size: 1.1em;
 }
 
 p {
-    font-size: .8em
+    font-size: 0.8em;
 }
 
-@media screen and (max-width:1170px) {
+@media screen and (max-width: 1170px) {
 
     .container-inner,
     .header-inner,
     .footer-inner {
-        padding: 0 30px
+        padding: 0 30px;
     }
 
     #footer {
-        padding-top: 15px
+        padding-top: 15px;
     }
 }
 
-@media screen and (max-width:1160px) {
+@media screen and (max-width: 1160px) {
     #trigger {
-        display: block !important
+        display: block !important;
     }
 
     .logged-in a.menu-trigger {
-        top: 32px
+        top: 32px;
     }
 
     .site-name {
         float: right;
-        margin-top: 60px
+        margin-top: 60px;
     }
 }
 
-@media screen and (max-width:992px) {
+@media screen and (max-width: 992px) {
     .primary-navigation {
-        display: none
+        display: none;
     }
 }
 
-@media screen and (max-width:783px) {
+@media screen and (max-width: 783px) {
     .logged-in a.menu-trigger {
-        top: 46px
+        top: 46px;
     }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
     #sidebar {
         float: none;
-        width: 100%
+        width: 100%;
     }
 
     #content {
         width: 100%;
-        float: none
+        float: none;
     }
 
     #content-area {
-        padding-right: 0
+        padding-right: 0;
     }
 }
 
-@media screen and (max-width:640px) {
+@media screen and (max-width: 640px) {
     #breadcrumbs {
-        display: none
+        display: none;
     }
 
     .primary-navigation {
-        height: 38px
+        height: 38px;
     }
 
     .primary-navigation .menu-toggle {
-        display: block
+        display: block;
     }
 
     .primary-navigation .nav-menu {
-        display: none
+        display: none;
     }
 
     .gallery br {
-        clear: none !important
+        clear: none !important;
     }
 
     .gallery .gallery-item {
-        width: 25% !important
+        width: 25% !important;
     }
 }
 
-@media screen and (max-width:540px) {
+@media screen and (max-width: 540px) {
     .footer-logo-description {
-        display: none
+        display: none;
     }
 
     .lama-footer-bright .logo-lama-on-white,
     .lama-footer-black .logo-lama-on-black {
-        float: none
+        float: none;
     }
 }
 
-@media screen and (max-width:520px) {
+@media screen and (max-width: 520px) {
     .footer-copyright {
         float: none;
-        text-align: center
+        text-align: center;
     }
 
     .footer-lama {
         float: none;
         text-align: center;
-        padding-top: 15px
+        padding-top: 15px;
     }
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width: 480px) {
     .gallery .gallery-item {
-        width: 50% !important
+        width: 50% !important;
     }
 }
